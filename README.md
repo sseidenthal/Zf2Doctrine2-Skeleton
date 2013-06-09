@@ -26,8 +26,8 @@ By default the XML example is enabled as i find XML more readable then YAML file
 
 You can find the examples in 
 
-* module/Application/congig/xml/application/ (xml example)
-* module/Application/congig/yml/application/ (yaml example)
+* module/Application/config/xml/application/ (xml example)
+* module/Application/config/yml/application/ (yaml example)
 
 The following command from within the root folder of your project will let you generate your entities
 ```
