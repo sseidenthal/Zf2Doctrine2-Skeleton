@@ -16,6 +16,7 @@
         "zendframework/zftool": "dev-master",
         "doctrine/doctrine-module" : "@stable",
         "doctrine/doctrine-orm-module" : "@stable",
+        "doctrine/annotations": "@stable",
         "symfony/yaml" : "@stable"
     }
 }
