@@ -9,4 +9,6 @@ To enable using YAML files in this project you have to uncomment the following 2
 
 The Files located here can then be used to generate your Entities with the following command from the root folder of your project.
 
+```
 ./vendor/bin/doctrine-module orm:generate-entities module/Application/src/
+```
