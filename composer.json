@@ -13,6 +13,7 @@
         "php": ">=5.3.3",
         "zendframework/zendframework": ">2.2.0rc1",
         "zendframework/zend-developer-tools": "@stable",
+        "zendframework/zftool": "dev-master",
         "doctrine/doctrine-module" : "@stable",
         "doctrine/doctrine-orm-module" : "@stable",
         "symfony/yaml" : "@stable"
