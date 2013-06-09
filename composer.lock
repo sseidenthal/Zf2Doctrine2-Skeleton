@@ -1,5 +1,9 @@
 {
-    "hash": "199d0f1fa274188cfd447f26680c7803",
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "8cf660b404f6f8740c47e2711340ed33",
     "packages": [
         {
             "name": "doctrine/common",
@@ -637,6 +641,57 @@
                 "zf2"
             ],
             "time": "2013-05-15 10:27:32"
+        },
+        {
+            "name": "zendframework/zftool",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/ZFTool.git",
+                "reference": "1a0fa773dbb60ba4b61e08fcc8aace476eaa9cfc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/ZFTool/zipball/1a0fa773dbb60ba4b61e08fcc8aace476eaa9cfc",
+                "reference": "1a0fa773dbb60ba4b61e08fcc8aace476eaa9cfc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "zendframework/zend-code": ">=2.0.0",
+                "zendframework/zend-config": ">=2.0.0",
+                "zendframework/zend-console": ">=2.0.0",
+                "zendframework/zend-file": ">=2.0.0",
+                "zendframework/zend-loader": ">=2.0.0",
+                "zendframework/zend-modulemanager": ">=2.0.0",
+                "zendframework/zend-mvc": ">=2.0.0",
+                "zendframework/zend-serializer": ">=2.0.0",
+                "zendframework/zend-servicemanager": ">=2.0.0",
+                "zendframework/zend-stdlib": ">=2.0.0",
+                "zendframework/zend-text": ">=2.0.0",
+                "zendframework/zend-version": ">=2.0.0",
+                "zendframework/zend-view": ">=2.0.0"
+            },
+            "bin": [
+                "zf.php"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ZFTool\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Utility module for Zend Framework 2 applications.",
+            "homepage": "http://framework.zend.com/",
+            "keywords": [
+                "tool",
+                "zf2"
+            ],
+            "time": "2013-06-08 07:08:10"
         }
     ],
     "packages-dev": [
@@ -649,6 +704,7 @@
     "stability-flags": {
         "zendframework/zendframework": 5,
         "zendframework/zend-developer-tools": 0,
+        "zendframework/zftool": 20,
         "doctrine/doctrine-module": 0,
         "doctrine/doctrine-orm-module": 0,
         "symfony/yaml": 0
