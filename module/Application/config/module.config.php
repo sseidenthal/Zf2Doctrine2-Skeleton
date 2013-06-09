@@ -8,6 +8,7 @@
  */
 
 return array(
+
     'router' => array(
         'routes' => array(
             'home' => array(
@@ -52,6 +53,7 @@ return array(
             ),
         ),
     ),
+
     'service_manager' => array(
         'abstract_factories' => array(
             'Zend\Cache\Service\StorageCacheAbstractServiceFactory',
@@ -61,6 +63,7 @@ return array(
             'translator' => 'MvcTranslator',
         ),
     ),
+
     'translator' => array(
         'locale' => 'en_US',
         'translation_file_patterns' => array(
@@ -71,11 +74,13 @@ return array(
             ),
         ),
     ),
+
     'controllers' => array(
         'invokables' => array(
             'Application\Controller\Index' => 'Application\Controller\IndexController'
         ),
     ),
+
     'view_manager' => array(
         'display_not_found_reason' => true,
         'display_exceptions'       => true,
@@ -92,21 +97,32 @@ return array(
             __DIR__ . '/../view',
         ),
     ),
+
     'doctrine' => array(
         'driver' => array(
-            'application_entity' => array(
 
-                /* Yaml Driver Example */
-                //'class' => 'Doctrine\ORM\Mapping\Driver\YamlDriver',
-                //'paths' => __DIR__ . '/yml/application'
+            /* AnnotationDriver Driver Example */
+            'application_entities_annotation' => array(
+                'class' =>'Doctrine\ORM\Mapping\Driver\AnnotationDriver',
+                'cache' => 'array',
+                'paths' => array(__DIR__ . '/../src/Application/Entity')
+            ),
 
-                /* Xml Driver Example */
+            /* XmlDriver Example */
+            'application_entities_xml' => array(
                 'class' => 'Doctrine\ORM\Mapping\Driver\XmlDriver',
                 'paths' => __DIR__ . '/xml/application'
             ),
+
+            /* YamlDriver Example */
+            'application_entities_yaml' => array(
+                'class' => 'Doctrine\ORM\Mapping\Driver\YamlDriver',
+                'paths' => __DIR__ . '/yml/application'
+            ),
+
             'orm_default' => array(
                 'drivers' => array(
-                    'Application\Entity'  => 'application_entity'
+                    'Application\Entity'  => 'application_entities_annotation'
                 ),
             ),
         ),
