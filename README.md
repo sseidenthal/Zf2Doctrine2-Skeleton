@@ -19,7 +19,7 @@ php -S localhost:8000
 
 You can now navigate to http://localhost:8000/ with your favorite Browser.
 
-##How to generate the Sample entities
+##How to generate the sample entities
 
 This project contains both an example to generate your entities from XML and YAML files. 
 By default the XML example is enabled as i find XML more readable then YAML files.
