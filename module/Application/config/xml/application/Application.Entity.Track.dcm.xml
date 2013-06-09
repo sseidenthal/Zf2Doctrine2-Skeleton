@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" 
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  
+  <entity name="Application\Entity\Track" table="Track">
+    <id name="Id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="title" type="string" column="title" length="100" nullable="true"/>
+    <field name="artist" type="string" column="track" length="100" nullable="true"/>
+    <field name="duration" type="string" column="duration" length="10" nullable="true"/>
+  </entity>
+  
+</doctrine-mapping>

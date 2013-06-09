@@ -105,6 +105,10 @@ return array(
             'orm_default' => array(
                 'drivers' => array(
                     'Application\Entity'  => 'application_entities_annotation'
+                    /* uncomment the next line to use YAML Driver*/
+                    //'Application\Entity'  => 'application_entities_yaml'
+                    /* uncomment the next line to use XML Driver*/
+                    //'Application\Entity'  => 'application_entities_xml'
                 ),
             ),
 
@@ -112,7 +116,8 @@ return array(
             'application_entities_annotation' => array(
                 'class' =>'Doctrine\ORM\Mapping\Driver\AnnotationDriver',
                 'cache' => 'array',
-                'paths' => array(__DIR__ . '/../src/Application/Entity')
+                'paths' => __DIR__ . '/annotation/application'
+                //'paths' => array(__DIR__ . '/../src/Application/Entity')
             ),
 
             /* XmlDriver Example */
