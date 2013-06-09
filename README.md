@@ -16,3 +16,20 @@ php composer.phar install
 cd public/
 php -S localhost:8000
 ```
+
+You can now navigate to http://localhost:8000/ with your favorite Browser.
+
+##How to generate the Sample entities
+
+This project contains both an example to generate your entities from XML and YAML files. 
+By default the XML example is enabled as i find XML more readable then YAML files.
+
+You can find the examples in 
+
+* module/Application/congig/xml/application/ (xml example)
+* module/Application/congig/yml/application/ (yaml example)
+
+The following command from within the root folder of your project will let you generate your entities
+```
+./vendor/bin/doctrine-module orm:generate-entities module/Application/src/
+```
