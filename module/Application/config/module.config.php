@@ -101,6 +101,13 @@ return array(
     'doctrine' => array(
         'driver' => array(
 
+            /* This is where you can change the Mapping Driver */
+            'orm_default' => array(
+                'drivers' => array(
+                    'Application\Entity'  => 'application_entities_annotation'
+                ),
+            ),
+
             /* AnnotationDriver Driver Example */
             'application_entities_annotation' => array(
                 'class' =>'Doctrine\ORM\Mapping\Driver\AnnotationDriver',
@@ -120,11 +127,6 @@ return array(
                 'paths' => __DIR__ . '/yml/application'
             ),
 
-            'orm_default' => array(
-                'drivers' => array(
-                    'Application\Entity'  => 'application_entities_annotation'
-                ),
-            ),
         ),
     ),
 );
