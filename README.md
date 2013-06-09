@@ -1,6 +1,6 @@
-# Zf2Doctrine2-Skeleton
+# ZF2 Doctrine2 Skeleton Application
 
-This is a working Skeleton Application of ZF2 with Doctrine 2.
+This is a working Skeleton Application of ZF2 with Doctrine2.
 
 It includes an example of generating entities from XML/YAML files.
 
