@@ -33,3 +33,9 @@ The following command from within the root folder of your project will let you g
 ```
 ./vendor/bin/doctrine-module orm:generate-entities module/Application/src/
 ```
+
+##Whats's next
+
+If you start using Zf2 and Doctrine2 i suggest the following realy nice tutorial.
+
+DOCTRINE 2 & ZF2 by MARCO PIVETTA: http://marco-pivetta.com/doctrine-orm-zf2-tutorial/#/
