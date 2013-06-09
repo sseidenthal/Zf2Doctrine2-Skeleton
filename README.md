@@ -19,6 +19,10 @@ php -S localhost:8000
 
 You can now navigate to http://localhost:8000/ with your favorite Browser.
 
+##Setup your Database connection
+
+Setting up your database is really easy, open config / autoload / doctrine.local.php and set your credentials.
+
 ##How to generate the sample entities
 
 This project contains both an example to generate your entities from XML and YAML files. 
